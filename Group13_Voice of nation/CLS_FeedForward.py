@@ -89,7 +89,7 @@ def main(audinput):
     device = torch.device("cpu")
     # Load the weights
     model = TransformerWithCLS(emb_size=768, depth=3, num_classes=9)
-    model.load_state_dict(torch.load('CLS_model_3000.pth', map_location=device))
+    model.load_state_dict(torch.load('CLS_model_5000.pth', map_location=device))
     model.to(device)
     model.eval()
 
